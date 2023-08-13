@@ -250,8 +250,10 @@ section{
 .about .content .icons-container {
     display: flex;
     flex-wrap: wrap;
-    gap:2rem;
+    gap:3rem;
     margin-top: 3rem;
+    flex: 1 1 16rem;
+    /* border: #cd9452 solid 1rem; */
 }
 
 .about .content .icons-container .icons{
@@ -259,10 +261,12 @@ section{
     text-align: center;
     background: var(--light-bg);
     padding: 3rem 2rem;
+    /* border: #666 solid 1rem; */
 }
 
 .about .content .icons-container .icons img{
     height: 19rem;
+    /* background: var(--light-bg); */
 }
 
 .about .content .icons-container .icons h3 {
@@ -573,31 +577,31 @@ transform: rotate(90deg);
     transform: translate(-15%, 0%);
 }
 
-.blogs {
+.sales {
     background: var(--light-bg);
 }
 
-.blogs .heading {
+.sales .heading {
     margin-top: 10rem;
 }
 
-.blogs .swiper-slide {
+.sales .swiper-slide {
     min-height: 700px;
 }
 
-.blogs .slide .image {
+.sales .slide .image {
     height: 25rem;
     overflow: hidden;
     position: relative;
 }
 
-.blogs .slide .image img {
+.sales .slide .image img {
     height: 100%;
     width: 100%;
     object-fit: contain;
 }
 
-.blogs .slide .image span{
+.sales .slide .image span{
     position: absolute;
     bottom: -10rem; left: 50%;
     transform: translateX(-50%);
@@ -608,15 +612,15 @@ transform: rotate(90deg);
     z-index: 10;
 }
 
-.blogs .slide:hover .image span{
+.sales .slide:hover .image span{
     bottom: 1rem;
 }
 
-.blogs .slide:hover .image img{
+.sales .slide:hover .image img{
     transform: scale(1.1);
 }
 
-.blogs .slide .content {
+.sales .slide .content {
     padding: 2rem;
     background: var(--white);
     box-shadow: var(--box-shadow);
@@ -624,53 +628,63 @@ transform: rotate(90deg);
     margin-bottom: 4rem;   
     overflow: hidden;
     transition: max-height 0.3s ease;
+
 }
 
-.blogs .slide .content.expanded {
+.sales .slide .content.expanded {
     max-height: none;
 }
 
-.blogs .slide .content .icon {
+.sales .slide .content .icon {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 2rem;
 }
 
-.blogs .slide .content .icon a {
+.sales .slide .content .icon a {
     font-size: 1.5rem;
     color: var(--light-black);
 }
 
-.blogs .slide .content .icon a i {
+.sales .slide .content .icon a i {
     padding-right: .7rem;
     color: var(--peru);
 }
 
-.blogs .slide .content .icon a:hover {
+.sales .slide .content .icon a:hover {
     color: var(--peru);
 }
 
-.blogs .slide .content .title {
+.sales .slide .content .title {
     font-size: 2.5rem;
     color: var(--black);
 }
 
-.blogs .slide .content .title:hover{
+.sales .slide .content .title:hover{
     text-decoration: underline;
 }
 
-.blogs .slide .content p{
+.sales .slide .content p{
     padding: 1rem 0;
     line-height: 2;
     font-size: 1.6rem;
     color: var(--light-black);
 }
 
-.blogs .slide .content .description.truncated {
+.sales .slide .content .description.truncated {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.sales .btn {
+    display: inline-block;
+    margin-right: 1rem; /* Add some spacing between the buttons */
+}
+
+.sales .buy-now {
+    float: right;
+    display: none;
 }
 
 .footer {

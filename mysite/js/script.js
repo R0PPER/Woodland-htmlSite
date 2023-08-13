@@ -77,7 +77,7 @@ var swiper = new Swiper(".menu-slider", {
   },
 });
 
-var swiper = new Swiper(".blogs-slider", {
+var swiper = new Swiper(".sales-slider", {
   grabCursor:true,
   loop:true,
   centeredSlides: true,
@@ -112,17 +112,20 @@ var swiper = new Swiper(".blogs-slider", {
 function toggleDescription(button) {
   const content = button.parentNode.querySelector('.description');
   const fullDescription = content.getAttribute('data-full-description');
+  const buyButton = button.parentNode.querySelector('.buy-now');
   
   if (content) {
       if (content.classList.contains('truncated')) {
           content.textContent = fullDescription;
           content.classList.remove('truncated');
           button.textContent = 'Read less';
+          buyButton.style.display = 'block';
       } else {
           const truncatedDescription = truncateText(fullDescription, 120);
           content.textContent = truncatedDescription;
           content.classList.add('truncated');
           button.textContent = 'Read more';
+          buyButton.style.display = 'none';
       }
   }
 }
@@ -137,16 +140,20 @@ function truncateText(text, maxLength) {
 
 function resetDescriptions() {
   const descriptions = document.querySelectorAll('.description');
+  const buyButton = document.querySelector('.buy-now');
+
+  
   descriptions.forEach(description => {
       const fullDescription = description.getAttribute('data-full-description');
       const truncatedDescription = truncateText(fullDescription, 120);
       description.textContent = truncatedDescription;
       description.classList.add('truncated');
+      buyButton.style.display = 'none';
   });
 
-  const buttons = document.querySelectorAll('.btn');
-  buttons.forEach(button => {
-      button.textContent = 'Read more';
-  });
+  // const buttons = document.querySelectorAll('.btn');
+  // buttons.forEach(button => {
+  //     button.textContent = 'Read more';
+  // });
 }
 

@@ -13,6 +13,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.css">
+
     <!--Custom css file link-->
     <link rel="stylesheet" href="./css/style.css">
     
@@ -32,7 +34,7 @@
         <a href="#gallery">gallery</a>    
         <a href="#menu">menu</a>    
         <a href="#order">order</a>    
-        <a href="#blogs">blogs</a>
+        <a href="#sales">sales</a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
@@ -95,18 +97,21 @@
         <p>Discover the unparalleled artistry of home transformation with us. Our dedicated team of designers and craftsmen are passionate about turning your vision into reality. We believe in tailor-made solutions that reflect your personality and lifestyle, ensuring every corner exudes comfort and sophistication. Elevate your living experience today.</p>
         <a href="#" class="btn">read more</a>
         <div class="icons-container">
-            <div class="icons">
-                <img src="./images/brick-wall-g24d30a6ad_1920.jpg" alt="">
-                <!-- <h3>quality wood</h3> -->
-            </div>
-            <div class="icons">
-                <img src="./images/PARQUET-BEDSIDE-TABLE-our_hanbury_hideaway-image-1666099085353-1.jpeg" alt="">
-                <!-- <h3>quality wood</h3> -->
-            </div>
-            <div class="icons">
-                <img src="./images/interior-g00dd0c250_1920.jpg" alt="">
-                <!-- <h3>quality wood</h3> -->
-            </div>
+            <a href="./images/brick-wall-g24d30a6ad_1920.jpg" data-lightbox="image-1">
+                <div class="icons">
+                    <img src="./images/brick-wall-g24d30a6ad_1920.jpg" alt="Image #1" style="max-height: 150px;">
+                </div>
+            </a>
+            <a href="./images/PARQUET-BEDSIDE-TABLE-our_hanbury_hideaway-image-1666099085353-1.jpeg" data-lightbox="image-2">
+                <div class="icons">
+                    <img src="./images/PARQUET-BEDSIDE-TABLE-our_hanbury_hideaway-image-1666099085353-1.jpeg" alt="Image #2" style="max-height: 150px;">
+                </div>
+            </a>
+            <a href="./images/interior-g00dd0c250_1920.jpg" data-lightbox="image-3">
+                <div class="icons">
+                    <img src="./images/interior-g00dd0c250_1920.jpg" alt="Image #3" style="max-height: 150px;">
+                </div>
+            </a>
         </div>
     </div>
 
@@ -606,15 +611,15 @@
 
 <!-- order section ends -->
 
-<!-- blog section starts -->
-    <section class="blogs" id="blogs">
+<!-- sales section starts -->
+    <section class="sales" id="sales">
 
         <div class="heading">
             <span>our sales</span>
             <h3>weekly markdowns</h3>
         </div>
 
-        <div class="swiper blogs-slider">
+        <div class="swiper sales-slider">
 
             <div class="swiper-wrapper">
 
@@ -630,6 +635,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Introducing the Bed Celeste+ in beige, a masterpiece of comfort and style. Its meticulously crafted design, featuring a soothing beige interior, promises nights of tranquility and rejuvenation. The blend of form and function creates an inviting atmosphere, while the elegant contours offer a visual feast that complements any bedroom decor. With Bed Celeste+, rest becomes an experience of luxury.">Introducing the Bed Celeste+ in beige, a masterpiece of comfort and style. Its meticulously crafted design...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -646,6 +652,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Unleash the contemporary charm of the Sofa Torino upon your living space. Crafted with precision and designed for comfort, this sofa is not merely furniture—it's an expression of modern artistry. Sink into its plush cushions, relishing the fusion of ergonomic relaxation and sleek aesthetics. Sofa Torino is more than seating; it's a conversation starter, a symbol of your taste for refinement.">"Unleash the contemporary charm of the Sofa Torino upon your living space. Crafted with precision and designed for comfort...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -662,6 +669,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Luxury takes center stage with the Palermo Sofa, a tribute to opulence and sophistication. Every detail exudes a sense of grandeur, from the sumptuous upholstery to the meticulous stitching. As you settle into its embrace, you'll discover a new realm of comfort where relaxation is an art form. Palermo Sofa transcends conventional seating, becoming a statement piece that transforms your living area into a palace of comfort.">Luxury takes center stage with the Palermo Sofa, a tribute to opulence and sophistication. Every detail exudes a sense of grandeur, from...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -678,6 +686,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Envision yourself in the Nora Rose Chair, where timeless design meets irresistible comfort. The intricate floral patterns and plush upholstery create an ambiance of elegance and warmth. This chair isn't just a piece of furniture—it's a haven for introspection and leisure, embodying the concept of functional beauty.">Envision yourself in the Nora Rose Chair, where timeless design meets irresistible comfort. The intricate floral patterns...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -694,6 +703,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Reimagine relaxation with the Siena Sofa, a symphony of style and comfort. Its inviting contours invite you to unwind, while the contemporary silhouette adds a touch of sophistication to your living space. Whether you're hosting guests or enjoying a quiet evening, the Siena Sofa elevates every moment, making comfort an artful experience.">Reimagine relaxation with the Siena Sofa, a symphony of style and comfort. Its inviting contours invite you to unwind, while the...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -710,6 +720,7 @@
                         <a href="#" class="title">blog title goes here</a>
                         <p class="description" data-full-description="Welcome the Oslo Sideboard 2 Doors into your home, where storage becomes a graceful endeavor. The sleek lines and rich textures make it more than a functional piece; it's an extension of your design sensibility. Behind its doors lies a world of organization, offering a blend of aesthetics and utility that enriches your living space. Oslo Sideboard 2 Doors isn't just storage—it's an embodiment of elegance and order.">Welcome the Oslo Sideboard 2 Doors into your home, where storage becomes a graceful endeavor. The sleek lines and rich textures...</p>
                         <a class="btn" onclick="toggleDescription(this)">read more</a>
+                        <a class="btn buy-now" href="#">buy now</a>                       
                     </div>
 
                 </div>
@@ -726,7 +737,7 @@
     </section>
 
 
-<!-- blog section ends -->
+<!-- sales section ends -->
 
 <!-- footer section starts here -->
 
@@ -776,11 +787,13 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
 <!--custom js file link-->>
 <script src="./js/script.js"></script>
