@@ -577,6 +577,10 @@ transform: rotate(90deg);
     background: var(--light-bg);
 }
 
+.blogs .heading {
+    margin-top: 10rem;
+}
+
 .blogs .swiper-slide {
     min-height: 700px;
 }
