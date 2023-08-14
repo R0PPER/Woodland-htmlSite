@@ -682,9 +682,24 @@ transform: rotate(90deg);
     margin-right: 1rem; /* Add some spacing between the buttons */
 }
 
-.sales .buy-now {
+/* .sales .buy-now {
     float: right;
     display: none;
+} */
+
+.sales .buy-now {
+    margin-top: 1rem;
+    float: right;
+    display: none;
+    background: var(--peru);
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+}
+
+.sales .buy-now:hover{
+    letter-spacing: 0.2rem;
 }
 
 .footer {

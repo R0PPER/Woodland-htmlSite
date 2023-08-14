@@ -140,20 +140,19 @@ function truncateText(text, maxLength) {
 
 function resetDescriptions() {
   const descriptions = document.querySelectorAll('.description');
-  const buyButton = document.querySelector('.buy-now');
+  const buyButtons = document.querySelectorAll('.buy-now'); // Select all "Buy Now" buttons
 
-  
-  descriptions.forEach(description => {
-      const fullDescription = description.getAttribute('data-full-description');
-      const truncatedDescription = truncateText(fullDescription, 120);
-      description.textContent = truncatedDescription;
-      description.classList.add('truncated');
-      buyButton.style.display = 'none';
+  descriptions.forEach((description, index) => {
+    const fullDescription = description.getAttribute('data-full-description');
+    const truncatedDescription = truncateText(fullDescription, 120);
+    description.textContent = truncatedDescription;
+    description.classList.add('truncated');
+    buyButtons[index].style.display = 'none'; 
   });
 
-  // const buttons = document.querySelectorAll('.btn');
-  // buttons.forEach(button => {
-  //     button.textContent = 'Read more';
-  // });
+  const buttons = document.querySelectorAll('.btn');
+  buttons.forEach(button => {
+    button.textContent = 'Read more';
+  });
 }
 
