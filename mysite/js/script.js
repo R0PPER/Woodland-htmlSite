@@ -17,30 +17,31 @@ var swiper = new Swiper(".home-slider", {
       prevEl: ".swiper-button-prev",
     },
 });
-
-var swiper = new Swiper(".popular-slider", {
-  grabCursor:true,
-  loop:true,
-  centeredSlides: true,
-  spaceBetween: 20,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  autoplay: {
-    delay: 5000, // Time in milliseconds (5 seconds in this case)
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
+document.addEventListener("DOMContentLoaded", function() {
+  var swiper = new Swiper(".popular-slider", {
+    grabCursor:true,
+    loop:true,
+    centeredSlides: true,
+    spaceBetween: 20,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
     },
-    700: {
-      slidesPerView: 2,
+    autoplay: {
+      delay: 5000, // Time in milliseconds (5 seconds in this case)
     },
-    1000: {
-      slidesPerView: 3,
+    breakpoints: {
+      0: {
+        slidesPerView: 1,
+      },
+      700: {
+        slidesPerView: 2,
+      },
+      1000: {
+        slidesPerView: 3,
+      },
     },
-  },
+  });
 });
 
 let previewContainer = document.querySelector('.furniture-preview-container');

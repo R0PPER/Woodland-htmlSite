@@ -2,7 +2,7 @@
 
 
 :root{
-    --peru:#cd9452;
+    --brown:#533222;
     --black:#222;
     --white:#fff;
     --light-black:#666;
@@ -47,7 +47,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background-color: var(--peru);
+    background-color: var(--brown);
 }
 
 section{
@@ -61,7 +61,7 @@ section{
 
 .heading span {
     font-size: 2.5rem;
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .heading h3 {
@@ -72,7 +72,7 @@ section{
 .btn {
     margin-top: 1rem;
     display: inline-block;
-    background: var(--peru);
+    background: var(--brown);
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
@@ -108,7 +108,7 @@ section{
 }
 
 .header .navbar a:hover{
-    color: var(--peru);
+    color: var(--brown);
 }
 
 #menu-btn{
@@ -201,7 +201,7 @@ section{
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-    background: var(--peru);
+    background: var(--brown);
     color:var(--white)
 }
 
@@ -269,6 +269,11 @@ section{
     /* background: var(--light-bg); */
 }
 
+.about .content .icons-container .icons:hover {
+    transform: scale(1.1); /* Increase the scale value to zoom more */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
 .about .content .icons-container .icons h3 {
     padding-top: 1rem;
     font-size: 2rem;
@@ -291,7 +296,7 @@ section{
     cursor: pointer;
 }
 .swiper-pagination-bullet-active {
-    background: var(--peru);
+    background: var(--brown);
 }
 
 .swiper-horizontal .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -321,7 +326,7 @@ section{
 
 .popular .slide .price {
     font-size: 2.5rem;
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .furniture-preview-container {
@@ -371,7 +376,7 @@ color: var(--black);
 
 .furniture-preview-container .furniture-preview .stars i{
     font-size: 1.7rem;
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .furniture-preview-container .furniture-preview p {
@@ -449,7 +454,7 @@ transform: rotate(90deg);
    padding: 1rem;
    font-size: 3rem;
    color: var(--white);
-   background: var(--peru);
+   background: var(--brown);
    margin-bottom: 3rem;
    text-align: center;
 }
@@ -487,7 +492,7 @@ transform: rotate(90deg);
 
 .menu .slide .box-container .box .price{
     font-size: 2.5rem;
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .menu .slide .box-container .box:hover {
@@ -496,7 +501,7 @@ transform: rotate(90deg);
 }
 
 .order {
-    background: var(--peru);
+    background: var(--brown);
 }
 
 .order .heading span {
@@ -556,6 +561,16 @@ transform: rotate(90deg);
 .order form .box-container .box .inputBox textarea {
     height: 20rem;
     resize: none;
+}
+
+.order form .box-container .box .inputBox .form-control {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: var(--light-black);
+    border: var(--border);
+    text-transform: none;
 }
 
 .order form .box-container .box .inputBox .map {
@@ -649,11 +664,11 @@ transform: rotate(90deg);
 
 .sales .slide .content .icon a i {
     padding-right: .7rem;
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .sales .slide .content .icon a:hover {
-    color: var(--peru);
+    color: var(--brown);
 }
 
 .sales .slide .content .title {
@@ -691,7 +706,7 @@ transform: rotate(90deg);
     margin-top: 1rem;
     float: right;
     display: none;
-    background: var(--peru);
+    background: var(--brown);
     color: var(--white);
     font-size: 2rem;
     cursor: pointer;
@@ -721,7 +736,7 @@ transform: rotate(90deg);
     height: 6rem;
     width: 6rem;
     border-radius: 50%;
-    background: var(--peru);
+    background: var(--brown);
     color: var(--white);
     margin-bottom: 0.5rem;
     line-height: 5.8rem;
@@ -756,7 +771,7 @@ transform: rotate(90deg);
 }
 
 .footer .share  a:hover{
-    background: var(--peru);
+    background: var(--brown);
 }
 
 .footer .credit {
@@ -768,7 +783,7 @@ transform: rotate(90deg);
 }
 
 .footer .credit span {
-    color: var(--peru);
+    color: var(--brown);
 }
 
 

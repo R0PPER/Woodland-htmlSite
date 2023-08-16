@@ -590,7 +590,9 @@
                     </div>
                     <div class="inputBox">
                         <span>continent</span>
-                        <input type="text" placeholder="enter your continent">
+                        <select id="country" name="country" class="form-control">
+                            <option value="default">Select a continent...</option>
+                        </select>
                     </div>
                     <div class="inputBox">
                         <span>when you want</span>
@@ -754,13 +756,13 @@
             <div class="icons">
                 <i class="fas fa-clock"></i>
                 <h3>opening hours</h3>
-                <p>7:00am to 10:00pm</p>
+                <p>7:00am to 21:00pm</p>
             </div>
 
             <div class="icons">
                 <i class="fas fa-phone"></i>
                 <h3>phone</h3>
-                <p>6978804106</p>
+                <p>69788xxxxx</p>
             </div>
 
             <div class="icons">
@@ -801,6 +803,8 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
 
+<script src="./js/countries.json"></script>
+
 <!--custom js file link-->>
 <script src="./js/script.js"></script>
 
@@ -808,7 +812,24 @@
     lightGallery(document.querySelector('.gallery .gallery-container'));
 </script>
 
-
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        fetch('./js/countries.json')
+            .then(response => response.json())
+            .then(countries => {
+                const selectElement = document.getElementById('country');
+                countries.forEach(country => {
+                    const option = document.createElement('option');
+                    option.value = country;
+                    option.textContent = country;
+                    selectElement.appendChild(option);
+                });
+            })
+            .catch(error => {
+                console.error('Error loading countries:', error);
+            });
+    });
+</script>
 
 
 
